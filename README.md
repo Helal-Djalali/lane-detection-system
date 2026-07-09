@@ -52,14 +52,15 @@ Run the program:
 python lane_detection.py
 ```
 
-Press `q` to close the video window.
+Press `q` or close the video window to stop the program.
 
 ## File Structure
 
 ```text
 lane-detection-system/
 ├── README.md
-└── lane_detection.py
+├── lane_detection.py
+└── requirements.txt
 ```
 
 ## Future Improvements

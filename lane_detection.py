@@ -114,7 +114,12 @@ while(cap.isOpened()):
 
     cv2.imshow("Lane Detection", combo_image)
 
-    if cv2.waitKey(30) & 0xFF == ord('q'):
+    key = cv2.waitKey(30) & 0xFF
+
+    if key == ord('q'):
+        break
+
+    if cv2.getWindowProperty("Lane Detection", cv2.WND_PROP_VISIBLE) < 1:
         break
 
 cap.release()
